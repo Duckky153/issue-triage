@@ -27,4 +27,4 @@ Use `npm run refresh-and-verify`. The current release changes only after the new
 
 ## Public demo
 
-Run `npm run build-static` and `npm run verify-static` before publication. The resulting `dist` folder is the deployable site. Publishing requires the repository owner's separate GitHub Pages approval.
+Run `npm run build-static` and `npm run verify-static` before publication. The resulting `dist` folder is the deployable site. The public demo is `https://duckky153.github.io/issue-triage/`; future releases require the repository owner's approval and a passing workflow.
