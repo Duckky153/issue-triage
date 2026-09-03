@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A review dashboard for public GitHub issues from n8n, Grafana, and Kubernetes.">
+  <title>GitHub Issue Triage Dashboard</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+  <a class="skip-link" href="#issue-detail">Skip to selected issue</a>
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="GitHub Issue Triage Dashboard home">
+      <span>GitHub Issue Triage Dashboard</span>
+    </a>
+    <div class="downloads" aria-label="Review handoff downloads">
+      <a href="./deliverables/review-handoff.csv" download>Download CSV</a>
+      <a href="./deliverables/review-handoff.json" download>Download JSON</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Review GitHub issues</h1>
+        <p class="intro-copy">Filter public issues from n8n, Grafana, and Kubernetes. Check the source and evidence before choosing a review lane.</p>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Issue totals">
+      <div><strong id="metric-total">—</strong><span>public issues</span></div>
+      <div><strong id="metric-suggested">—</strong><span>suggested lanes</span></div>
+      <div><strong id="metric-review">—</strong><span>needs review</span></div>
+      <div><strong id="metric-closed">—</strong><span>closed on GitHub</span></div>
+    </section>
+
+    <section class="workspace">
+      <aside class="queue" aria-labelledby="queue-title">
+        <div class="queue-heading">
+          <div><p class="kicker">Queue</p><h2 id="queue-title">Issues</h2></div>
+          <span id="queue-count">—</span>
+        </div>
+        <div class="filters">
+          <label class="search-filter" for="search-filter">Search
+            <input id="search-filter" type="search" placeholder="Title, number, or label" autocomplete="off">
+          </label>
+          <label for="repository-filter">Repository
+            <select id="repository-filter">
+              <option value="all">All repositories</option>
+              <option value="Grafana">Grafana</option>
+              <option value="Kubernetes">Kubernetes</option>
+              <option value="n8n">n8n</option>
+            </select>
+          </label>
+          <label for="review-filter">Review state
+            <select id="review-filter">
+              <option value="all">All states</option>
+              <option value="needs-review">Needs Review</option>
+              <option value="suggested">Suggested lane</option>
+              <option value="closed-source">Closed on GitHub</option>
+            </select>
+          </label>
+        </div>
+        <div id="issue-list" class="issue-list" role="list"></div>
+      </aside>
+
+      <article class="detail" id="issue-detail" aria-live="polite">
+        <div id="empty-state" class="empty-state" hidden>
+          <h2>No issues found</h2>
+          <p>Clear a filter or try another search.</p>
+        </div>
+        <header class="detail-header">
+          <div>
+            <p id="issue-reference" class="issue-reference">—</p>
+            <h2 id="issue-title">Loading issue…</h2>
+          </div>
+          <span id="review-state" class="state-pill">—</span>
+        </header>
+
+        <div class="source-row">
+          <div><span>Source state</span><strong id="source-state">—</strong></div>
+          <div><span>Issue type</span><strong id="issue-type">—</strong></div>
+          <div><span>Review area</span><strong id="review-area">—</strong></div>
+          <a id="source-link" href="#" target="_blank" rel="noreferrer">Open exact GitHub issue</a>
+        </div>
+
+        <section class="lane-card" aria-labelledby="lane-title">
+          <p class="kicker">Next step</p>
+          <h3 id="lane-title">—</h3>
+          <p id="rationale">—</p>
+        </section>
+
+        <div class="detail-grid">
+          <section aria-labelledby="evidence-title">
+            <p class="kicker">Decision basis</p>
+            <h3 id="evidence-title">Why this result</h3>
+            <ul id="evidence-list" class="evidence-list"></ul>
+            <div id="label-list" class="label-list" aria-label="Source labels"></div>
+          </section>
+          <section aria-labelledby="checklist-title">
+            <p class="kicker">Review checklist</p>
+            <h3 id="checklist-title">What to check next</h3>
+            <ol id="checklist" class="checklist"></ol>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./generated-data.js"></script>
+  <script src="./dashboard.js"></script>
+</body>
+</html>

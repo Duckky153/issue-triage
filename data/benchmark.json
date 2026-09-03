@@ -1,0 +1,907 @@
+{
+  "schemaVersion": 1,
+  "name": "Reviewed public-issue routing benchmark",
+  "reviewedAt": "2026-09-02T02:30:46.955Z",
+  "measurementBoundary": "Measures deterministic rule agreement and suggested-route coverage; it is not a model-accuracy dataset.",
+  "records": [
+    {
+      "issue": {
+        "id": "grafana/grafana#110422",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 110422,
+        "title": "Alerting templates: .DashboardURL: make from and to timestamp query parameters optional",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/alerting",
+          "automated-triage",
+          "stale",
+          "type/feature-request"
+        ],
+        "comments": 1,
+        "createdAt": "2025-09-01T15:48:22Z",
+        "updatedAt": "2026-09-02T01:55:03Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/110422"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "reliability",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and area/alerting."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#110373",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 110373,
+        "title": "Modify the file permission of archived log from 640 to 440, or make it configurable",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/configuration",
+          "area/security",
+          "automated-triage",
+          "stale",
+          "type/feature-request"
+        ],
+        "comments": 1,
+        "createdAt": "2025-09-01T03:26:37Z",
+        "updatedAt": "2026-09-02T01:55:01Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/110373"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "security-access",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and area/security."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#110369",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 110369,
+        "title": "Consider dropping / deprecating X-XSS-Protection",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/security",
+          "automated-triage",
+          "type/cleanup"
+        ],
+        "comments": 2,
+        "createdAt": "2025-08-31T13:20:41Z",
+        "updatedAt": "2026-09-02T01:54:59Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/110369"
+      },
+      "expected": {
+        "issueType": "cleanup",
+        "reviewArea": "security-access",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/cleanup and area/security."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#110255",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 110255,
+        "title": "hide unit from y axis",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/dashboards/panel",
+          "area/legend",
+          "automated-triage",
+          "stale",
+          "type/feature-request"
+        ],
+        "comments": 1,
+        "createdAt": "2025-08-28T06:13:06Z",
+        "updatedAt": "2026-09-02T01:54:57Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/110255"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and dashboard panel area."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#102117",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 102117,
+        "title": "OpenSearch 2.9 not working in Grafana 11.x version",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/backend",
+          "automated-triage",
+          "datasource/OpenSearch",
+          "stale",
+          "type/bug",
+          "type/regression"
+        ],
+        "comments": 8,
+        "createdAt": "2025-03-13T14:31:23Z",
+        "updatedAt": "2026-09-02T01:54:22Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/102117"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/bug and datasource/OpenSearch."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#131895",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 131895,
+        "title": "Docs: Add deployment guide for Docker containers",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/configuration",
+          "automated-triage",
+          "type/docs"
+        ],
+        "comments": 0,
+        "createdAt": "2026-09-01T21:59:14Z",
+        "updatedAt": "2026-09-01T22:02:28Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/131895"
+      },
+      "expected": {
+        "issueType": "documentation",
+        "reviewArea": "documentation",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/docs; that is enough to select documentation review."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#131638",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 131638,
+        "title": "GeoMap Carto Base layer now requires API key.",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/panel/geomap",
+          "automated-triage",
+          "type/bug"
+        ],
+        "comments": 10,
+        "createdAt": "2026-08-26T18:25:45Z",
+        "updatedAt": "2026-09-01T21:21:04Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/131638"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/bug and geomap panel area."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#109843",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 109843,
+        "title": "Provide configurable toggle option to manage Fixed positioning of template variables",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/dashboard/settings",
+          "area/dashboard/variable",
+          "automated-triage",
+          "type/feature-request",
+          "type/ux"
+        ],
+        "comments": 5,
+        "createdAt": "2025-08-19T09:26:20Z",
+        "updatedAt": "2026-09-01T18:10:36Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/109843"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and dashboard settings area."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#131881",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 131881,
+        "title": "Dashboard version history stops at the first page for large dashboards (\"Show more versions\" never appears)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/dashboard/settings",
+          "automated-triage",
+          "type/bug",
+          "type/regression"
+        ],
+        "comments": 0,
+        "createdAt": "2026-09-01T14:29:32Z",
+        "updatedAt": "2026-09-01T14:32:47Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/131881"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana bug and regression labels agree; the dashboard label supplies the review area."
+    },
+    {
+      "issue": {
+        "id": "grafana/grafana#131876",
+        "repository": "grafana/grafana",
+        "project": "Grafana",
+        "context": "Observability and data visualization",
+        "number": 131876,
+        "title": "Unauthorized popup is triggered upon anonymous login in newer Grafana versions (13.2.0)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/auth",
+          "area/frontend/login",
+          "automated-triage",
+          "issue/auto-triaged",
+          "type/bug",
+          "type/regression"
+        ],
+        "comments": 1,
+        "createdAt": "2026-09-01T11:36:07Z",
+        "updatedAt": "2026-09-01T11:39:48Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/grafana/grafana/issues/131876"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "security-access",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana bug and regression labels agree; auth and login labels supply the review area."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#110653",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 110653,
+        "title": "The number conversion of `Value()` of type Quantity is incorrect",
+        "state": "closed",
+        "stateReason": "completed",
+        "labels": [
+          "kind/bug",
+          "needs-triage",
+          "sig/api-machinery"
+        ],
+        "comments": 15,
+        "createdAt": "2022-06-19T18:09:23Z",
+        "updatedAt": "2026-09-02T02:07:25Z",
+        "closedAt": "2026-09-02T02:07:25Z",
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/110653"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "infrastructure",
+        "reviewState": "closed-source"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/bug and sig/api-machinery; the source is closed."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#141749",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 141749,
+        "title": "[Failing Test] [sig-auth] Projected PodCertificate conformance test cannot bind port 443 under Restricted Linux settings",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "kind/failing-test",
+          "needs-triage",
+          "priority/important-soon",
+          "sig/auth"
+        ],
+        "comments": 7,
+        "createdAt": "2026-09-01T14:56:25Z",
+        "updatedAt": "2026-09-02T01:34:08Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141749"
+      },
+      "expected": {
+        "issueType": "failing-test",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "The failing-test and sig/auth labels are clear, but needs-triage requires human review."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#141665",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 141665,
+        "title": "remove leftover debug logs from TestValidateNodeDeclaredFeatures",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "kind/bug",
+          "kind/cleanup",
+          "sig/api-machinery",
+          "sig/node",
+          "triage/accepted"
+        ],
+        "comments": 4,
+        "createdAt": "2026-08-28T23:42:16Z",
+        "updatedAt": "2026-09-02T01:33:05Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141665"
+      },
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "Kind/bug and kind/cleanup conflict, so the dashboard must not choose between them."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#14217",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 14217,
+        "title": "Refactor Volume Code",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "help wanted",
+          "kind/cleanup",
+          "lifecycle/frozen",
+          "priority/backlog",
+          "sig/storage"
+        ],
+        "comments": 19,
+        "createdAt": "2015-09-19T00:44:51Z",
+        "updatedAt": "2026-09-02T01:10:35Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/14217"
+      },
+      "expected": {
+        "issueType": "cleanup",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/cleanup and sig/storage."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#18174",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 18174,
+        "title": "\"don't require a load balancer between cluster and control plane and still be HA\"",
+        "state": "open",
+        "stateReason": "reopened",
+        "labels": [
+          "area/HA",
+          "area/kube-proxy",
+          "area/kubelet",
+          "help wanted",
+          "kind/api-change",
+          "kind/feature",
+          "lifecycle/frozen",
+          "priority/backlog",
+          "sig/api-machinery",
+          "sig/network",
+          "sig/node",
+          "triage/accepted"
+        ],
+        "comments": 182,
+        "createdAt": "2015-12-03T22:24:38Z",
+        "updatedAt": "2026-09-02T01:10:25Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/18174"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/feature and infrastructure SIGs."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#132195",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 132195,
+        "title": "API can be streamlined: assume same key for some `EnvVarSource`",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "area/api",
+          "help wanted",
+          "kind/feature",
+          "needs-triage",
+          "priority/backlog",
+          "sig/node"
+        ],
+        "comments": 18,
+        "createdAt": "2025-06-09T16:15:58Z",
+        "updatedAt": "2026-09-02T01:10:07Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/132195"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kind/feature and sig/node are clear, but needs-triage requires human review."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#141773",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 141773,
+        "title": "keyutil.ParsePublicKeysPEM rejects PKCS#8-encoded ECDSA keys",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "kind/bug",
+          "needs-triage",
+          "sig/auth"
+        ],
+        "comments": 1,
+        "createdAt": "2026-09-02T01:07:52Z",
+        "updatedAt": "2026-09-02T01:08:01Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141773"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kind/bug and sig/auth are clear, but needs-triage requires human review."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#141481",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 141481,
+        "title": "Kubelet misses memory request cgroup reconstruction during cgroup config recovery (breaks InPlacePodVerticalScaling and MemoryQoS on restart)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "priority/backlog",
+          "sig/node",
+          "triage/accepted",
+          "triage/needs-information"
+        ],
+        "comments": 6,
+        "createdAt": "2026-08-20T02:31:16Z",
+        "updatedAt": "2026-09-01T21:37:42Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141481"
+      },
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The labels identify sig/node but triage/needs-information leaves the issue type unresolved."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#141474",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 141474,
+        "title": "Extend feature gate dependency validation to required API group/versions (runtime-config)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "kind/feature",
+          "sig/api-machinery",
+          "sig/architecture",
+          "sig/scheduling",
+          "triage/accepted"
+        ],
+        "comments": 6,
+        "createdAt": "2026-08-19T20:43:12Z",
+        "updatedAt": "2026-09-01T19:50:31Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141474"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/feature and infrastructure SIGs."
+    },
+    {
+      "issue": {
+        "id": "kubernetes/kubernetes#141652",
+        "repository": "kubernetes/kubernetes",
+        "project": "Kubernetes",
+        "context": "Container orchestration and infrastructure",
+        "number": 141652,
+        "title": "Introduce model-based correctness and linearizability testing for k8s storage",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "kind/feature",
+          "sig/api-machinery",
+          "triage/accepted"
+        ],
+        "comments": 2,
+        "createdAt": "2026-08-28T13:01:14Z",
+        "updatedAt": "2026-09-01T19:44:38Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141652"
+      },
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/feature and sig/api-machinery."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#36886",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 36886,
+        "title": "Workflow execution hangs forever (status: running, empty runData) — reproduced across SQLite/Postgres, internal/external runner, and Queue Mode",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "Needs Feedback",
+          "status:in-linear"
+        ],
+        "comments": 6,
+        "createdAt": "2026-08-23T18:56:26Z",
+        "updatedAt": "2026-09-02T00:44:42Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/36886"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "general",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The title states that execution hangs, but the labels do not identify a review area and request feedback."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#37574",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 37574,
+        "title": "Billing says Pro, but only give Personal",
+        "state": "closed",
+        "stateReason": "completed",
+        "labels": [
+          "closed:support-issue"
+        ],
+        "comments": 2,
+        "createdAt": "2026-09-01T17:46:09Z",
+        "updatedAt": "2026-09-01T17:50:39Z",
+        "closedAt": "2026-09-01T17:46:20Z",
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/37574"
+      },
+      "expected": {
+        "issueType": "question",
+        "reviewArea": "general",
+        "reviewState": "closed-source"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The source is closed as a support issue; no organizational conclusion is inferred."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#34916",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 34916,
+        "title": "Salesforce node (OAuth2): refresh silently drops oauthTokenData.instance_url, causing \"Invalid URL\" (ERR_INVALID_URL) until manual reconnect",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:iam"
+        ],
+        "comments": 2,
+        "createdAt": "2026-07-24T14:47:52Z",
+        "updatedAt": "2026-09-01T13:46:43Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/34916"
+      },
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The iam label identifies an access area, but no native issue-type label exists."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#37407",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 37407,
+        "title": "Error output never fires when $getPairedItem throws inside handleNodeErrorOutput — the failed node's input item leaks to the success output",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear"
+        ],
+        "comments": 2,
+        "createdAt": "2026-08-31T09:27:18Z",
+        "updatedAt": "2026-09-01T12:56:51Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/37407"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "general",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific title phrase identifies a bug, but the labels do not identify an accountable area."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#36863",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 36863,
+        "title": "MCP Client Tool cannot be used as a tool of MCP Server Trigger — tools/list works, tools/call fails with \"did not return a valid Tool\", execution logged as success",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:nodes"
+        ],
+        "comments": 3,
+        "createdAt": "2026-08-22T13:47:50Z",
+        "updatedAt": "2026-09-01T10:23:48Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/36863"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific failure phrase and team:nodes label support an integration review suggestion."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#37353",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 37353,
+        "title": "Mistral Cloud Chat Model: \"Random Seed\" option cannot be added (default: undefined)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:ai"
+        ],
+        "comments": 4,
+        "createdAt": "2026-08-29T12:13:07Z",
+        "updatedAt": "2026-09-01T08:27:30Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/37353"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific failure phrase and team:ai label support an integration review suggestion."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#37453",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 37453,
+        "title": "Mistral Cloud Chat Model fails in AI Agent: \"Failed to parse URL from [object Request]\" — still broken in 2.36.9 Cloud (same as #25318)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:ai"
+        ],
+        "comments": 2,
+        "createdAt": "2026-08-31T15:51:03Z",
+        "updatedAt": "2026-09-01T08:24:03Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/37453"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific failure phrase and team:ai label support an integration review suggestion."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#36972",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 36972,
+        "title": "Regression in 2.36.5 — Mistral Chat Model node fails with \"Failed to parse URL from [object Request]\" (works in 2.35.4)",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:ai"
+        ],
+        "comments": 4,
+        "createdAt": "2026-08-24T18:24:36Z",
+        "updatedAt": "2026-09-01T08:12:34Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/36972"
+      },
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The title states a regression and team:ai supplies the review area."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#31821",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 31821,
+        "title": "API key scopes select-all control is difficult to reach with NVDA",
+        "state": "closed",
+        "stateReason": "completed",
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:iam"
+        ],
+        "comments": 3,
+        "createdAt": "2026-06-05T11:53:20Z",
+        "updatedAt": "2026-09-01T07:00:04Z",
+        "closedAt": "2026-09-01T07:00:04Z",
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/31821"
+      },
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "security-access",
+        "reviewState": "closed-source"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The iam label identifies an access area; the closed source state is preserved."
+    },
+    {
+      "issue": {
+        "id": "n8n-io/n8n#31837",
+        "repository": "n8n-io/n8n",
+        "project": "n8n",
+        "context": "Workflow automation and integrations",
+        "number": 31837,
+        "title": "Webhook trigger firing multiple times",
+        "state": "open",
+        "stateReason": null,
+        "labels": [
+          "status:in-linear",
+          "status:team-assigned",
+          "team:cats"
+        ],
+        "comments": 17,
+        "createdAt": "2026-06-05T13:48:41Z",
+        "updatedAt": "2026-08-31T22:27:51Z",
+        "closedAt": null,
+        "sourceUrl": "https://github.com/n8n-io/n8n/issues/31837"
+      },
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "integrations",
+        "reviewState": "needs-review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The team:nodes label identifies an integration area, but the type is not explicit enough to infer."
+    }
+  ]
+}

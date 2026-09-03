@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "dataset": "Public GitHub issue triage snapshot",
+  "retrievedAt": "2026-09-03T20:21:36.478Z",
+  "sourceType": "Public GitHub issue metadata",
+  "collectionMethod": "GitHub REST API repository-issues endpoint with pagination",
+  "selectionMethod": "30 most recently updated unique issue records per repository after pull requests are excluded",
+  "recordCount": 90,
+  "snapshotSha256": "6cbb507b7c7a0ecebd6a37b3d5e6c98d013c77cf37c3d188c98e3aafbd518fe6",
+  "fieldsRetained": [
+    "id",
+    "repository",
+    "project",
+    "context",
+    "number",
+    "title",
+    "state",
+    "stateReason",
+    "labels",
+    "comments",
+    "createdAt",
+    "updatedAt",
+    "closedAt",
+    "sourceUrl"
+  ],
+  "fieldsOmitted": [
+    "user",
+    "avatar",
+    "assignee",
+    "body",
+    "comment text",
+    "email",
+    "credentials"
+  ],
+  "repositories": [
+    {
+      "repository": "n8n-io/n8n",
+      "project": "n8n",
+      "repositoryUrl": "https://github.com/n8n-io/n8n",
+      "issuesUrl": "https://github.com/n8n-io/n8n/issues",
+      "apiEndpoint": "https://api.github.com/repos/n8n-io/n8n/issues?state=all&sort=updated&direction=desc&per_page=100",
+      "apiVersion": "2022-11-28",
+      "pagesFetched": 2,
+      "recordsReturned": 200,
+      "pullRequestsExcluded": 166,
+      "duplicatesExcluded": 0,
+      "issuesSelected": 30,
+      "rateLimit": {
+        "limit": 60,
+        "remainingAfterRequest": 58,
+        "resetAt": "1788470496"
+      }
+    },
+    {
+      "repository": "grafana/grafana",
+      "project": "Grafana",
+      "repositoryUrl": "https://github.com/grafana/grafana",
+      "issuesUrl": "https://github.com/grafana/grafana/issues",
+      "apiEndpoint": "https://api.github.com/repos/grafana/grafana/issues?state=all&sort=updated&direction=desc&per_page=100",
+      "apiVersion": "2022-11-28",
+      "pagesFetched": 1,
+      "recordsReturned": 100,
+      "pullRequestsExcluded": 69,
+      "duplicatesExcluded": 0,
+      "issuesSelected": 30,
+      "rateLimit": {
+        "limit": 60,
+        "remainingAfterRequest": 57,
+        "resetAt": "1788470496"
+      }
+    },
+    {
+      "repository": "kubernetes/kubernetes",
+      "project": "Kubernetes",
+      "repositoryUrl": "https://github.com/kubernetes/kubernetes",
+      "issuesUrl": "https://github.com/kubernetes/kubernetes/issues",
+      "apiEndpoint": "https://api.github.com/repos/kubernetes/kubernetes/issues?state=all&sort=updated&direction=desc&per_page=100",
+      "apiVersion": "2022-11-28",
+      "pagesFetched": 2,
+      "recordsReturned": 200,
+      "pullRequestsExcluded": 160,
+      "duplicatesExcluded": 0,
+      "issuesSelected": 30,
+      "rateLimit": {
+        "limit": 60,
+        "remainingAfterRequest": 55,
+        "resetAt": "1788470496"
+      }
+    }
+  ],
+  "boundaries": [
+    "The records are public GitHub issues, not private support tickets.",
+    "The dashboard is independent and is not affiliated with the repositories or their maintainers.",
+    "Suggested review lanes are deterministic portfolio outputs, not maintainer assignments or priorities."
+  ]
+}
