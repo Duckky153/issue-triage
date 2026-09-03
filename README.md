@@ -37,7 +37,7 @@ npm run serve-static
 
 The `dist` folder is a self-contained static site. It includes the dashboard data and both downloadable handoffs, uses relative paths so it works under a GitHub Pages project URL, and makes no API request when a visitor opens it.
 
-The checked-in Pages workflow runs the full release gate, builds `dist`, and deploys that folder after the repository owner enables GitHub Pages with GitHub Actions. See `docs/DEPLOYMENT.md`. Building the folder locally does not publish it.
+The public demo is live at `https://duckky153.github.io/issue-triage/`, with source at `https://github.com/Duckky153/issue-triage`. The checked-in Pages workflow runs the full release gate, builds `dist`, and deploys that folder. See `docs/DEPLOYMENT.md`. Building the folder locally does not publish it.
 
 ## What the workflow does
 
