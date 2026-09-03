@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-03T22:01:47.243Z",
+  "valid": true,
+  "errors": [],
+  "recordCount": 90,
+  "repositoryCounts": {
+    "grafana/grafana": 30,
+    "kubernetes/kubernetes": 30,
+    "n8n-io/n8n": 30
+  },
+  "computedHash": "6cbb507b7c7a0ecebd6a37b3d5e6c98d013c77cf37c3d188c98e3aafbd518fe6",
+  "snapshotHashMatches": true,
+  "uniqueIds": true,
+  "uniqueUrls": true,
+  "omittedSensitiveFields": true
+}

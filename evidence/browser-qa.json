@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-09-03T22:01:49.775Z",
+  "appRoot": "/Users/dakshitraj/KAIROS/cmu-ai-enablement-service-desk",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    {
+      "name": "renders the issue queue without build metadata",
+      "detail": ""
+    },
+    {
+      "name": "shows exact GitHub source",
+      "detail": ""
+    },
+    {
+      "name": "shows distinct issue type and review area",
+      "detail": ""
+    },
+    {
+      "name": "shows evidence",
+      "detail": ""
+    },
+    {
+      "name": "shows three review checklist steps",
+      "detail": ""
+    },
+    {
+      "name": "exposes CSV handoff",
+      "detail": ""
+    },
+    {
+      "name": "exposes JSON handoff",
+      "detail": ""
+    },
+    {
+      "name": "repository and search filters work",
+      "detail": ""
+    },
+    {
+      "name": "review-state filter works",
+      "detail": ""
+    },
+    {
+      "name": "desktop has no horizontal overflow",
+      "detail": ""
+    },
+    {
+      "name": "mobile has no horizontal overflow",
+      "detail": ""
+    },
+    {
+      "name": "mobile keeps source link visible",
+      "detail": ""
+    },
+    {
+      "name": "hostile title renders as text",
+      "detail": ""
+    },
+    {
+      "name": "hostile title creates no element",
+      "detail": ""
+    },
+    {
+      "name": "hostile title executes no handler",
+      "detail": ""
+    },
+    {
+      "name": "zero console errors",
+      "detail": ""
+    },
+    {
+      "name": "zero page errors",
+      "detail": ""
+    },
+    {
+      "name": "zero runtime remote requests",
+      "detail": ""
+    }
+  ],
+  "errors": {
+    "console": [],
+    "page": [],
+    "remote": []
+  }
+}

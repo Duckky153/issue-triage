@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-09-03T22:03:05.284Z",
+  "snapshotRetrievedAt": "2026-09-03T20:21:36.478Z",
+  "status": "verified",
+  "dataset": {
+    "checkedAt": "2026-09-03T22:01:47.243Z",
+    "valid": true,
+    "errors": [],
+    "recordCount": 90,
+    "repositoryCounts": {
+      "grafana/grafana": 30,
+      "kubernetes/kubernetes": 30,
+      "n8n-io/n8n": 30
+    },
+    "computedHash": "6cbb507b7c7a0ecebd6a37b3d5e6c98d013c77cf37c3d188c98e3aafbd518fe6",
+    "snapshotHashMatches": true,
+    "uniqueIds": true,
+    "uniqueUrls": true,
+    "omittedSensitiveFields": true
+  },
+  "benchmark": {
+    "records": 30,
+    "repositoryCounts": {
+      "grafana/grafana": 10,
+      "kubernetes/kubernetes": 10,
+      "n8n-io/n8n": 10
+    },
+    "exactRuleAgreement": {
+      "count": 30,
+      "percent": 100
+    },
+    "suggestedCoverage": {
+      "count": 18,
+      "percent": 60
+    },
+    "incompatibleAutoRouteCount": 0,
+    "gatePassed": true
+  },
+  "release": {
+    "records": 90,
+    "exactSourceLinks": 90,
+    "needsReview": 54,
+    "suggested": 25
+  },
+  "boundaries": [
+    "No affiliation, employment, maintainer access, endorsement, or private support data.",
+    "No production deployment, employee adoption, measured time savings, or organizational outcome.",
+    "Suggested review lanes are evidence-backed prompts for human review, not assignments or priorities."
+  ],
+  "gates": {
+    "unitTests": 23,
+    "artifactChecks": 15,
+    "browserChecks": 18,
+    "syntaxFiles": 18,
+    "dependencyAudit": "0 vulnerabilities"
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "benchmarkVersion": 1,
+  "reviewedAt": "2026-09-02T02:30:46.955Z",
+  "records": 30,
+  "repositoryCounts": {
+    "grafana/grafana": 10,
+    "kubernetes/kubernetes": 10,
+    "n8n-io/n8n": 10
+  },
+  "exactRuleAgreement": {
+    "count": 30,
+    "percent": 100
+  },
+  "suggestedCoverage": {
+    "count": 18,
+    "percent": 60
+  },
+  "incompatibleAutoRouteCount": 0,
+  "gatePassed": true,
+  "terms": "These are deterministic rule agreement and coverage measurements, not model accuracy.",
+  "results": [
+    {
+      "id": "grafana/grafana#110422",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/110422",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "reliability",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "reliability",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Reliability review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and area/alerting.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#110373",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/110373",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "security-access",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "security-access",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Security and access review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and area/security.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#110369",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/110369",
+      "expected": {
+        "issueType": "cleanup",
+        "reviewArea": "security-access",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "cleanup",
+        "reviewArea": "security-access",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Security and access review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/cleanup and area/security.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#110255",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/110255",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "observability",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Observability review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and dashboard panel area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#102117",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/102117",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Integration review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/bug and datasource/OpenSearch.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#131895",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/131895",
+      "expected": {
+        "issueType": "documentation",
+        "reviewArea": "documentation",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "documentation",
+        "reviewArea": "documentation",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Documentation review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/docs; that is enough to select documentation review.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#131638",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/131638",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "observability",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Observability review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/bug and geomap panel area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#109843",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/109843",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "observability",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Observability review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana labels the record type/feature-request and dashboard settings area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#131881",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/131881",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "observability",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "observability",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Observability review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana bug and regression labels agree; the dashboard label supplies the review area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "grafana/grafana#131876",
+      "sourceUrl": "https://github.com/grafana/grafana/issues/131876",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "security-access",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "security-access",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Security and access review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Grafana bug and regression labels agree; auth and login labels supply the review area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#110653",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/110653",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "infrastructure",
+        "reviewState": "closed-source"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "infrastructure",
+        "reviewState": "closed-source",
+        "suggestedReviewLane": "Closed source record review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/bug and sig/api-machinery; the source is closed.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#141749",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141749",
+      "expected": {
+        "issueType": "failing-test",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "failing-test",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "The failing-test and sig/auth labels are clear, but needs-triage requires human review.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#141665",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141665",
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "needs-review",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "Kind/bug and kind/cleanup conflict, so the dashboard must not choose between them.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#14217",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/14217",
+      "expected": {
+        "issueType": "cleanup",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "cleanup",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Infrastructure review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/cleanup and sig/storage.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#18174",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/18174",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Infrastructure review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/feature and infrastructure SIGs.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#132195",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/132195",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kind/feature and sig/node are clear, but needs-triage requires human review.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#141773",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141773",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kind/bug and sig/auth are clear, but needs-triage requires human review.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#141481",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141481",
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "needs-review",
+        "reviewArea": "infrastructure",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The labels identify sig/node but triage/needs-information leaves the issue type unresolved.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#141474",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141474",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Infrastructure review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/feature and infrastructure SIGs.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "kubernetes/kubernetes#141652",
+      "sourceUrl": "https://github.com/kubernetes/kubernetes/issues/141652",
+      "expected": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "feature-request",
+        "reviewArea": "infrastructure",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Infrastructure review"
+      },
+      "unambiguousNativeLabels": true,
+      "rationale": "Kubernetes labels the record kind/feature and sig/api-machinery.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#36886",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/36886",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "general",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "general",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The title states that execution hangs, but the labels do not identify a review area and request feedback.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#37574",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/37574",
+      "expected": {
+        "issueType": "question",
+        "reviewArea": "general",
+        "reviewState": "closed-source"
+      },
+      "actual": {
+        "issueType": "question",
+        "reviewArea": "general",
+        "reviewState": "closed-source",
+        "suggestedReviewLane": "Closed source record review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The source is closed as a support issue; no organizational conclusion is inferred.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#34916",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/34916",
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "needs-review",
+        "reviewArea": "security-access",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The iam label identifies an access area, but no native issue-type label exists.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#37407",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/37407",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "general",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "general",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific title phrase identifies a bug, but the labels do not identify an accountable area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#36863",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/36863",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Integration review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific failure phrase and team:nodes label support an integration review suggestion.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#37353",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/37353",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Integration review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific failure phrase and team:ai label support an integration review suggestion.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#37453",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/37453",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Integration review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "A specific failure phrase and team:ai label support an integration review suggestion.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#36972",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/36972",
+      "expected": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested"
+      },
+      "actual": {
+        "issueType": "bug",
+        "reviewArea": "integrations",
+        "reviewState": "suggested",
+        "suggestedReviewLane": "Integration review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The title states a regression and team:ai supplies the review area.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#31821",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/31821",
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "security-access",
+        "reviewState": "closed-source"
+      },
+      "actual": {
+        "issueType": "needs-review",
+        "reviewArea": "security-access",
+        "reviewState": "closed-source",
+        "suggestedReviewLane": "Closed source record review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The iam label identifies an access area; the closed source state is preserved.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    },
+    {
+      "id": "n8n-io/n8n#31837",
+      "sourceUrl": "https://github.com/n8n-io/n8n/issues/31837",
+      "expected": {
+        "issueType": "needs-review",
+        "reviewArea": "integrations",
+        "reviewState": "needs-review"
+      },
+      "actual": {
+        "issueType": "needs-review",
+        "reviewArea": "integrations",
+        "reviewState": "needs-review",
+        "suggestedReviewLane": "Needs Review"
+      },
+      "unambiguousNativeLabels": false,
+      "rationale": "The team:nodes label identifies an integration area, but the type is not explicit enough to infer.",
+      "exactAgreement": true,
+      "incompatibleAutoRoute": false
+    }
+  ]
+}
