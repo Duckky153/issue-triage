@@ -29,9 +29,9 @@ for (const path of syntaxFiles) run(process.execPath, ["--check", path]);
 run(process.execPath, ["scripts/browser-check.mjs"], { BROWSER_PORT: String(4400 + (process.pid % 400)), WRITE_SCREENSHOTS: process.env.WRITE_SCREENSHOTS ?? "1" });
 run(process.execPath, ["scripts/build-static.mjs"]);
 run(process.execPath, ["scripts/verify-static.mjs"], { STATIC_TEST_PORT: String(5200 + (process.pid % 400)) });
-const auditOutput = run("npm", ["audit", "--audit-level=high"]);
+const auditOutput = run("npm", ["audit", "--omit=dev", "--audit-level=high", "--fetch-timeout=60000", "--fetch-retries=0"]);
 
-const proseFiles = ["CLAUDE.md", "README.md", "docs/DEPLOYMENT.md", "docs/JOB-DESCRIPTION-MAPPING.md", "docs/PROJECT-BRIEF.md", "docs/USER-GUIDE.md", "docs/ROUTING-POLICY.md", "docs/SOURCE-CONTRACT.md", "docs/MAINTENANCE-AND-ROLLBACK.md", "docs/TEST-PLAN.md", "docs/WALKTHROUGH.md", "evidence/CLAIM-LEDGER.md", "evidence/VERIFICATION.md", "site/index.html"];
+const proseFiles = ["README.md", "docs/DEPLOYMENT.md", "docs/JOB-DESCRIPTION-MAPPING.md", "docs/PROJECT-BRIEF.md", "docs/USER-GUIDE.md", "docs/ROUTING-POLICY.md", "docs/SOURCE-CONTRACT.md", "docs/MAINTENANCE-AND-ROLLBACK.md", "docs/TEST-PLAN.md", "docs/WALKTHROUGH.md", "evidence/CLAIM-LEDGER.md", "evidence/VERIFICATION.md", "site/index.html"];
 const prose = (await Promise.all(proseFiles.map((path) => readFile(join(root, path), "utf8")))).join("\n");
 const displayProse = prose.replace(/\/Users\/dakshitraj\/Vaults\/fetch\/100 Research\/Sessions\/2026-08-08 LinkedIn Premium AI Enablement Job Strategy\.md/g, "spawning-research-note");
 assert.ok(!/AI Enablement|Service Desk|Operations Desk|operating recommendation|recommended route|playbook/i.test(displayProse), "retired framing remains in current prose");

@@ -15,7 +15,7 @@ npm run verify-static
 
 ## GitHub Pages
 
-Recommended repository name: `issue-triage`. With the current GitHub account, the expected project URL would be `https://duckky153.github.io/issue-triage/`.
+The public repository is `Duckky153/issue-triage`, and the deployed site is `https://duckky153.github.io/issue-triage/`.
 
 1. Create or select the repository that will own this project.
 2. Push the verified project to its `main` branch.
@@ -29,4 +29,5 @@ The workflow in `.github/workflows/pages.yml` runs the full verification suite b
 
 Refresh locally and review the result before pushing it. A live refresh changes which recently updated issues appear, so the checked-in release remains stable until the verified files are committed and deployed.
 
-Publishing, changing repository settings, and pushing to the remote are external actions and require the owner's approval.
+The initial publication was owner-authorized on September 3, 2026. Future
+public changes still require owner approval and a passing workflow.
