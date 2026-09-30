@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-03T22:01:49.775Z",
+  "checkedAt": "2026-09-30T21:02:31.297Z",
   "appRoot": ".",
   "viewports": [
     {
@@ -14,6 +14,10 @@
   "checks": [
     {
       "name": "renders the issue queue without build metadata",
+      "detail": ""
+    },
+    {
+      "name": "shows data date, state meanings, and repository link",
       "detail": ""
     },
     {

@@ -69,7 +69,8 @@ export function buildRelease(dataset, manifest, benchmark) {
       totalRecords: dashboard.totalRecords,
       needsReview: dashboard.needsReview,
       suggested: dashboard.suggested,
-      closedSource: dashboard.closedRecords
+      closedSource: dashboard.closedRecords,
+      retrievedAt: dataset.retrievedAt
     },
     results: publicResults
   };

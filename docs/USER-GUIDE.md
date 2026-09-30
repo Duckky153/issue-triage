@@ -25,6 +25,6 @@ as `PORT=4192 npm run serve`, and open the URL printed by the server.
 
 Use `npm run refresh-and-verify`. The current release changes only after the new candidate passes collection, data, benchmark, test, artifact, browser, syntax, and dependency gates.
 
-## Public demo
+## Public site
 
-Run `npm run build-static` and `npm run verify-static` before publication. The resulting `dist` folder is the deployable site. The public demo is `https://duckky153.github.io/issue-triage/`; future releases require the repository owner's approval and a passing workflow.
+Run `npm run build-static` and `npm run verify-static` before publication. The resulting `dist` folder is the deployable site. The public site is `https://duckky153.github.io/issue-triage/`; each release goes out only after the Pages workflow passes.

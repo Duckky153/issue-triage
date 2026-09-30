@@ -1,8 +1,23 @@
 # GitHub Issue Triage Dashboard
 
-A dashboard that turns public GitHub issue metadata into a review queue. It keeps the exact source link, shows the evidence used, separates issue type from review area, and sends uncertain records to `Needs Review`.
+This dashboard turns public GitHub issues from n8n, Grafana, and Kubernetes into a review queue. It helps a person who triages issues see the exact source, the evidence behind each suggested review lane, and which issues still need a human decision.
 
-The pinned release contains equal samples from n8n, Grafana, and Kubernetes. The live totals, exclusions, hashes, and review-state counts are generated; they are not copied into this document.
+**Live site:** [duckky153.github.io/issue-triage](https://duckky153.github.io/issue-triage/)
+
+![The dashboard with the issue queue, filters, and one selected issue with its evidence and review checklist](evidence/dashboard-desktop.png)
+
+## Key facts
+
+From the issue data collected on September 3, 2026:
+
+- 90 public issues, 30 from each repository.
+- 25 issues have a suggested review lane, 54 are held for review, and 11 were already closed on GitHub.
+- None of the 30 n8n issues gets a suggested lane. Recent n8n issues carry team and status labels but no bug or feature label, so the rules hold them for review instead of guessing.
+- Every deploy first runs 23 unit tests, 15 artifact checks, and 19 browser checks. A failed check stops the release.
+
+Built with AI assistance (Claude Code and Codex).
+
+This is an independent project on public data. It is not affiliated with n8n, Grafana, or Kubernetes, and it has no real users. A suggested review lane comes from fixed rules and is a prompt for human review, not an assignment, priority, or maintainer decision.
 
 ## Run it
 
@@ -21,13 +36,13 @@ stopping that project:
 PORT=4192 npm run serve
 ```
 
-To collect a new candidate and promote it only after every gate passes:
+To collect new issue data and promote it only after every check passes:
 
 ```bash
 npm run refresh-and-verify
 ```
 
-## Build the public demo
+## Build the static site
 
 ```bash
 npm run build-static
@@ -37,7 +52,7 @@ npm run serve-static
 
 The `dist` folder is a self-contained static site. It includes the dashboard data and both downloadable handoffs, uses relative paths so it works under a GitHub Pages project URL, and makes no API request when a visitor opens it.
 
-The public demo is live at `https://duckky153.github.io/issue-triage/`, with source at `https://github.com/Duckky153/issue-triage`. The checked-in Pages workflow runs the full release gate, builds `dist`, and deploys that folder. See `docs/DEPLOYMENT.md`. Building the folder locally does not publish it.
+The source is at `https://github.com/Duckky153/issue-triage`. The checked-in Pages workflow runs the full check suite, builds `dist`, and deploys that folder. See `docs/DEPLOYMENT.md`. Building the folder locally does not publish it.
 
 ## What the workflow does
 
@@ -51,8 +66,8 @@ The public demo is live at `https://duckky153.github.io/issue-triage/`, with sou
 
 The CSV and JSON handoff files contain the source URL, evidence, suggested review lane, and next-step checklist for every issue.
 
-## Boundaries
+## Limits
 
-This is an independent portfolio project. It does not prove affiliation, employment, maintainer access, private support work, production use, employee adoption, time saved, or a business outcome. A suggested review lane is an explainable prompt for human review, not an assignment, priority, resolution, or maintainer decision.
+The project does not show affiliation, employment, maintainer access, private support work, production use, adoption, time saved, or a business outcome. The counts above describe the September 3, 2026 data; `evidence/current-verification.json` holds the current generated result.
 
-See `docs/USER-GUIDE.md` for the walkthrough and `evidence/current-verification.json` for the current generated result.
+See `docs/USER-GUIDE.md` for how to use the dashboard and `docs/WALKTHROUGH.md` for how it works.

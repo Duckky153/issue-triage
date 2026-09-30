@@ -122,6 +122,11 @@
   $("#metric-suggested").textContent = data.summary.suggested;
   $("#metric-review").textContent = data.summary.needsReview;
   $("#metric-closed").textContent = data.summary.closedSource;
+  const dataDate = new Date(data.summary.retrievedAt);
+  if (!Number.isNaN(dataDate.getTime())) {
+    $("#data-date").textContent = dataDate.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+    $("#data-date").dateTime = dataDate.toISOString().slice(0, 10);
+  }
   render();
   document.documentElement.dataset.ready = "true";
 })();

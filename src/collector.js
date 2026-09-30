@@ -157,7 +157,7 @@ export async function collectSnapshot(options = {}) {
     boundaries: [
       "The records are public GitHub issues, not private support tickets.",
       "The dashboard is independent and is not affiliated with the repositories or their maintainers.",
-      "Suggested review lanes are deterministic portfolio outputs, not maintainer assignments or priorities."
+      "Suggested review lanes come from fixed rules; they are not maintainer assignments or priorities."
     ]
   };
   return { dataset, manifest };

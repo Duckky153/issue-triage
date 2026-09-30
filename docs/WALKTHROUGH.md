@@ -1,6 +1,6 @@
 # Walkthrough
 
-## Two-minute explanation
+## How it works
 
 1. **Problem:** public issue queues contain mixed work and incomplete metadata. The dashboard prepares a review record without pretending to make a maintainer decision.
 2. **Input:** public GitHub metadata from three repositories. Pull requests, duplicate records, usernames, bodies, assignees, and comment text are excluded.
@@ -8,9 +8,9 @@
 4. **Interface:** search or filter the queue, select an issue, open the exact source, inspect the evidence, and follow the checklist.
 5. **Handoff:** export CSV or JSON with the source URL, evidence, lane, and next steps.
 6. **Quality:** a fixed real-issue benchmark checks rule agreement, while candidate validation, browser tests, static-release checks, and rollback tests protect the current release.
-7. **Limit:** this is public-data portfolio work, not affiliation, private support work, production use, adoption, time saved, or a company outcome.
+7. **Limit:** this project uses public data only. It has no affiliation, private support work, production use, real users, adoption, time saved, or company outcome.
 
-## Likely questions
+## Common questions
 
 **Why not infer more from the title?** Generic words create false positives. The tool abstains when the retained evidence is not enough.
 

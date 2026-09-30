@@ -32,10 +32,12 @@ run(process.execPath, ["scripts/verify-static.mjs"], { STATIC_TEST_PORT: String(
 const auditOutput = run("npm", ["audit", "--omit=dev", "--audit-level=high", "--fetch-timeout=60000", "--fetch-retries=0"]);
 
 const proseFiles = ["README.md", "docs/DEPLOYMENT.md", "docs/PROJECT-BRIEF.md", "docs/USER-GUIDE.md", "docs/ROUTING-POLICY.md", "docs/SOURCE-CONTRACT.md", "docs/MAINTENANCE-AND-ROLLBACK.md", "docs/TEST-PLAN.md", "docs/WALKTHROUGH.md", "evidence/CLAIM-LEDGER.md", "evidence/VERIFICATION.md", "site/index.html"];
-const prose = (await Promise.all(proseFiles.map((path) => readFile(join(root, path), "utf8")))).join("\n");
-const displayProse = prose.replace(/\/path\/to\/private-note\.md/g, "spawning-research-note");
-assert.ok(!/AI Enablement|Service Desk|Operations Desk|operating recommendation|recommended route|playbook/i.test(displayProse), "retired framing remains in current prose");
-assert.ok(!/\b(?:19|24|26|90)\b/.test(prose), "historical generated counts remain hard-coded in prose");
+const proseByFile = await Promise.all(proseFiles.map(async (path) => [path, await readFile(join(root, path), "utf8")]));
+const prose = proseByFile.map(([, text]) => text).join("\n");
+// The README states the dated key counts on purpose; every other document keeps generated counts out of prose.
+const countedProse = proseByFile.filter(([path]) => path !== "README.md").map(([, text]) => text).join("\n");
+assert.ok(!/AI Enablement|Service Desk|Operations Desk|operating recommendation|recommended route|playbook/i.test(prose), "retired framing remains in current prose");
+assert.ok(!/\b(?:19|24|26|90)\b/.test(countedProse), "historical generated counts remain hard-coded in prose");
 assert.ok(!/\b(?:delve|leverage|utilize|streamline|robust|cutting-edge|transformative)\b/i.test(prose), "AI-slop vocabulary remains in current prose");
 
 const verificationPath = join(root, "evidence/current-verification.json");

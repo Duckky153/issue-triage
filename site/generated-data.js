@@ -3,7 +3,8 @@ window.GITHUB_TRIAGE_DATA = {
     "totalRecords": 90,
     "needsReview": 54,
     "suggested": 25,
-    "closedSource": 11
+    "closedSource": 11,
+    "retrievedAt": "2026-09-03T20:21:36.478Z"
   },
   "results": [
     {

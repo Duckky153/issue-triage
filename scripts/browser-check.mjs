@@ -1,6 +1,6 @@
 import { spawn } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
 
@@ -58,6 +58,14 @@ try {
       && !/SHA-256|deterministic rule|model accuracy|Snapshot\s+\d/i.test(visibleText)
       && await page.locator("#metric-benchmark, #snapshot-note, .brand-mark, .method").count() === 0
   );
+  const dataNote = await page.locator(".data-note").innerText();
+  check(
+    "shows data date, state meanings, and repository link",
+    /^[A-Z][a-z]+ \d{1,2}, \d{4}$/.test(await page.locator("#data-date").innerText())
+      && /Suggested/.test(dataNote)
+      && /Needs Review/.test(dataNote)
+      && await page.locator(".data-note a[href='https://github.com/Duckky153/issue-triage']").count() === 1
+  );
   check("shows exact GitHub source", /^https:\/\/github\.com\/.+\/issues\/\d+$/.test(await page.locator("#source-link").getAttribute("href")));
   check("shows distinct issue type and review area", Boolean((await page.locator("#issue-type").innerText()).trim()) && Boolean((await page.locator("#review-area").innerText()).trim()));
   check("shows evidence", await page.locator("#evidence-list li").count() >= 1);
@@ -104,7 +112,7 @@ try {
   await mkdir(evidenceDir, { recursive: true });
   const report = {
     checkedAt: new Date().toISOString(),
-    appRoot,
+    appRoot: relative(projectRoot, appRoot) || ".",
     viewports: [{ width: 1440, height: 1000 }, { width: 390, height: 844 }],
     checks,
     errors
