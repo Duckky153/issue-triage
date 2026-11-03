@@ -25,7 +25,7 @@ The public repository is `Duckky153/issue-triage`, and the deployed site is `htt
 
 The workflow in `.github/workflows/pages.yml` runs the full verification suite before deployment. A failed gate stops the release.
 
-The first public release, commit `d71e1a0ae63b265909974c17ca21d840a5d754b3`, passed workflow run `33813274154` on September 3, 2026. A separate public-host browser check confirmed the totals, search, both filters, exact source links, CSV and JSON downloads, and mobile layout with no console or page errors.
+The first public release, commit `88fc7eb`, passed workflow run `33813274154` on September 3, 2026. The run predates a later history cleanup that changed commit hashes, so its page shows the earlier hash for this commit. A separate public-host browser check confirmed the totals, search, both filters, exact source links, CSV and JSON downloads, and mobile layout with no console or page errors.
 
 ## Updating the public data
 
