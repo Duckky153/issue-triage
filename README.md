@@ -21,8 +21,12 @@ This is an independent project on public data. It is not affiliated with n8n, Gr
 
 ## Run it
 
+Needs Node.js 20 or newer. `npm run verify` drives a real browser, so install
+Playwright's Chromium once first.
+
 ```bash
 npm ci
+npx playwright install chromium
 npm run verify
 npm run serve
 ```
